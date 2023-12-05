@@ -313,3 +313,9 @@ Prospective users often inquire about the differences between Linkerd and altern
 **Istio:** While both Linkerd and Istio address service mesh functionality, Linkerd is known for its lightweight design and simplicity, making it an excellent choice for organizations seeking a streamlined service mesh solution.
 
 **Consul Connect:** Linkerd differentiates itself by focusing on the data plane, providing dedicated solutions for service communication. Consul Connect, on the other hand, offers a broader spectrum of features beyond service mesh, including service discovery and configuration management.
+
+
+
+# Action List
+-Update the security.md file to clarify security protocols
+
