@@ -209,31 +209,30 @@ The tap tool supports real time analysis of live traffic. This feature can poten
 
 ## Project compliance
 
-Linkerd is committed to maintaining a high standard of compliance with industry best practices, security protocols, and community engagement. This section outlines the project's adherence to various standards and initiatives.
+# Security and Vulnerability Management:
 
-Security and Vulnerability Management
-1. Vulnerability Reporting:
-Linkerd follows a responsible disclosure process. Security vulnerabilities are promptly addressed and documented in the Linkerd Security Advisories, providing users with transparent and detailed information about past vulnerabilities and their resolutions.
+# Vulnerability Reporting: 
 
-2. Continuous Monitoring:
-The project employs continuous monitoring mechanisms to detect and respond to potential security threats promptly. Regular security audits and reviews contribute to a proactive approach in maintaining the integrity and security of the codebase.
+Linkerd’s approach to vulnerability reporting aligns with industry compliance standards, particularly in the context of Kubernetes based applications. The service mesh’s design is based on a sidecar model which is a design pattern commonly used in microservices architectures, specifically with containerized applications like those running on Kubernetes. This plays a crucial role in managing network security controls and implementing security features without making changes to the underlying application. Thus this model ensures robust vulnerability reporting and management. 
 
-Community Engagement
-1. Open Governance:
-Linkerd is committed to an open and inclusive governance model. Decision-making processes are transparent, and community input is actively sought through open forums and discussions. Major decisions and changes are communicated through public channels, ensuring community involvement in the project's evolution.
+# Continuous Monitoring: 
 
-2. User Feedback and Contributions:
-The project values user feedback and contributions. An active community participates in discussions, raises issues, and contributes to the development process. Linkerd maintains a responsive approach to user needs and actively encourages community members to become contributors.
+Linkerd achieves Continuous monitoring through its lightweight, performance-oriented proxy architecture. Which is fundamental for implementing security controls once again in a Kubernetes environment. The focus on minimizing the compute and operational footprint of each proxy, along with the use of Rust for enhanced security and performance, allows for a strong commitment to continuous monitoring, which is a key aspect of compliance with regulatory standards. 
 
-Best Practices and Standards
-1. Core Infrastructure Initiative (CII) Best Practices:
-Linkerd is actively working towards achieving the Core Infrastructure Initiative (CII) Best Practices badge. The project is aligning its processes, documentation, and security practices with CII standards. Progress can be tracked through the CII Best Practices Program.
+# Core Infrastructure Initiative (CII) Best Practices: 
 
-2. Coding Standards and Reviews:
-Linkerd adheres to a set of coding standards and conducts thorough code reviews. This ensures the quality and security of the codebase. Automated testing, continuous integration, and other development best practices are integral to the project's commitment to delivering reliable software.
+Badge Link: 
 
-Collaboration and Partnerships
-Linkerd actively collaborates with other projects, vendors, and the broader ecosystem. This collaboration ensures interoperability, provides users with a wide range of choices, and fosters a healthy and diverse ecosystem around service mesh technologies.
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/1445/badge)](https://www.bestpractices.dev/projects/1445)
+
+Linkerd’s implementation of mutual TLS, its approach to authorization policy enforcement, and the use of the zero trust model where the proxy in each pod acts as an enforcement point for network access, aligns with the “enforce everywhere, every time” directive of zero trust security. This approach is indicative of Linkerd’s commitment to best practices and standards in security and compliance specifically in cloud and Kubernetes environments. 
+
+
+# Coding Standards and Reviews:
+
+Linkerd employs a structured Requested for Comment (RFC) process for contributions. This ensures any changes made align with the project goals and compliance standards. This process is inspired by best practices from successful open-source projects and includes thorough community review and discussion 
+The process involves detailed code reviews, which emphasizes adherence to Linkerd’s design principles and coding standards. This approach guarantees that the project remains compliant with industry best practices in software development. 
+
 
 ## Secure development practices
 
