@@ -209,17 +209,17 @@ The tap tool supports real time analysis of live traffic. This feature can poten
 
 ## Project compliance
 
-# Security and Vulnerability Management:
+## Security and Vulnerability Management:
 
-# Vulnerability Reporting: 
+### Vulnerability Reporting: 
 
 Linkerd’s approach to vulnerability reporting aligns with industry compliance standards, particularly in the context of Kubernetes based applications. The service mesh’s design is based on a sidecar model which is a design pattern commonly used in microservices architectures, specifically with containerized applications like those running on Kubernetes. This plays a crucial role in managing network security controls and implementing security features without making changes to the underlying application. Thus this model ensures robust vulnerability reporting and management. 
 
-# Continuous Monitoring: 
+### Continuous Monitoring: 
 
 Linkerd achieves Continuous monitoring through its lightweight, performance-oriented proxy architecture. Which is fundamental for implementing security controls once again in a Kubernetes environment. The focus on minimizing the compute and operational footprint of each proxy, along with the use of Rust for enhanced security and performance, allows for a strong commitment to continuous monitoring, which is a key aspect of compliance with regulatory standards. 
 
-# Core Infrastructure Initiative (CII) Best Practices: 
+### Core Infrastructure Initiative (CII) Best Practices: 
 
 Badge Link: 
 
@@ -228,13 +228,13 @@ Badge Link:
 Linkerd’s implementation of mutual TLS, its approach to authorization policy enforcement, and the use of the zero trust model where the proxy in each pod acts as an enforcement point for network access, aligns with the “enforce everywhere, every time” directive of zero trust security. This approach is indicative of Linkerd’s commitment to best practices and standards in security and compliance specifically in cloud and Kubernetes environments. 
 
 
-# Coding Standards and Reviews:
+### Coding Standards and Reviews:
 
 Linkerd employs a structured Requested for Comment (RFC) process for contributions. This ensures any changes made align with the project goals and compliance standards. This process is inspired by best practices from successful open-source projects and includes thorough community review and discussion 
 The process involves detailed code reviews, which emphasizes adherence to Linkerd’s design principles and coding standards. This approach guarantees that the project remains compliant with industry best practices in software development. 
 
 
-## Secure development practices
+# Secure development practices
 
 ### Development Pipeline 
 
