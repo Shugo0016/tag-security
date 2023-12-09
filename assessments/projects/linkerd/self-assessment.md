@@ -1,17 +1,4 @@
-# Self-assessment
-The Self-assessment is the initial document for projects to begin thinking about the
-security of the project, determining gaps in their security, and preparing any security
-documentation for their users. This document is ideal for projects currently in the
-CNCF **sandbox** as well as projects that are looking to receive a joint assessment and
-currently in CNCF **incubation**.
-
-
-For a detailed guide with step-by-step discussion and examples, check out the free
-Express Learning course provided by Linux Foundation Training & Certification:
-[Security Assessments for Open Source Projects](https://training.linuxfoundation.org/express-learning/security-self-assessments-for-open-source-projects-lfel1005/).
-
-
-# Self-assessment outline
+# Linkerd Security Self-assessment
 
 
 ## Table of contents
@@ -41,19 +28,17 @@ Express Learning course provided by Linux Foundation Training & Certification:
 | Software | https://github.com/linkerd/linkerd2/tree/main |
 | Security Provider | No |
 | Languages | Go, Rust, JavaScript, Shell |
-| SBOM | [Linkerd2 SBOM](https://github.com/amanda-gonzalez/tag-security/blob/b985fdda15ced11eeebb9e0cbd8e93a558719f17/assessments/projects/linkerd/linkerd2_linkerd_2d716299a1714728651f2ba7b08478b2f1e54605.json) |
+| SBOM | Linkerd does not currently generate SBOMs on release |
 | | |
 
 
 ### Security links
 
 
-Provide the list of links to existing security documentation for the project. You may
-use the table below as an example:
 | Doc | url |
 | -- | -- |
 | Security file | https://github.com/linkerd/linkerd2/blob/main/SECURITY.md |
-| Default and optional configs | N/A |
+| Default and optional configs | https://github.com/linkerd/linkerd2/blob/main/BUILD.md#development-configurations |
 
 
 ## Overview
@@ -313,9 +298,4 @@ Prospective users often inquire about the differences between Linkerd and altern
 **Istio:** While both Linkerd and Istio address service mesh functionality, Linkerd is known for its lightweight design and simplicity, making it an excellent choice for organizations seeking a streamlined service mesh solution.
 
 **Consul Connect:** Linkerd differentiates itself by focusing on the data plane, providing dedicated solutions for service communication. Consul Connect, on the other hand, offers a broader spectrum of features beyond service mesh, including service discovery and configuration management.
-
-
-
-# Action List
--Update the security.md file to clarify security protocols
 
